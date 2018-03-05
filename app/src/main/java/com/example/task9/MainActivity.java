@@ -10,12 +10,11 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
     WebView wv;
     String url;
-    Double a;
-    Double b;
-    Double c;
     EditText et;
-    String str;
     int i;
+    String a;
+    String b;
+    String c;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,18 +30,15 @@ public class MainActivity extends AppCompatActivity {
     public void go(View view) {
         i++;
         if (i==1){
-            str=et.getText().toString();
-            a=Double.parseDouble(str);
+            a=et.getText().toString();
             et.setText("");
         }
         if (i==2){
-            str=et.getText().toString();
-            b=Double.parseDouble(str);
+            b=et.getText().toString();
             et.setText("");
         }
         if (i==3){
-            str=et.getText().toString();
-            c=Double.parseDouble(str);
+            c=et.getText().toString();
             et.setText("");
             url=("https://www.google.co.il/search?q="+a+"x%5E2%2B"+b+"x%2B"+c+"&oq=");
             wv.loadUrl(url);

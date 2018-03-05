@@ -13,8 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="30"
-        android:inputType="number"
-        android:hint="Enter Numbers"
+        android:inputType="numberSigned|numberDecimal"
+        android:hint="@string/enter_numbers"
         android:onClick="go"/>
 
     <Space
